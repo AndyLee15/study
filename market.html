@@ -11,11 +11,58 @@
             width: 1200px;
             margin: auto;
         }
+
         #button {
             font-size: 10px;
-            position: relative;
+        }
+
+        .topMenu {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .txt {
+            padding: 10px 15px;
+        }
+
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
 
         }
+
+        /* 부모(텍스트얼라인) 자식 태그(인라인,플로트) 별도로 각각 설정 */
+        li {
+            display: inline;
+            float: center;
+            margin: auto;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .btn {
+            background-color: #3665f3;
+            text-shadow: none;
+            border-radius: 0;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 14px;
+            min-width: 168px;
+            height: 42px;
+            font-weight: normal;
+            display: inline-block;
+            vertical-align: baseline;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+
+        }
+        footer{
+            text-align: center;
+        }
+
     </style>
 </head>
 
@@ -23,12 +70,61 @@
     <div>
         <img src="https://gi.esmplus.com/rudy16/ebay-logo-redesign-1.jpg" alt="logo" width="200" height="125">
         <button id="gh-shop">shop by<br> category</button>
-            <label for="q">검색: </label>
-            <input type="text" name="q" id="q">
-            <input type="submit"> <input type="reset">
+        <label for="q">검색: </label>
+        <input type="text" class="txt" size="80px" name="q" id="q" placeholder="Search for anything">
+        <input type="submit" class="btn" value="search">
     </div>
-    
+    <hr>
+    <div>
+        <ul class="nav">
+            <li>Home</li>
+            <li>♥Saved</li>
+            <li>Motors</li>
+            <li>Electronics</li>
+            <li>Collectibles Art</li>
+            <li>Home&Garden</li>
+            <li>Toys</li>
+            <li>Sporting Goods</li>
+            <li>Jewelry&Watches</li>
 
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <img src="https://gi.esmplus.com/rudy16/12321.PNG" alt="product logo" width="100%">
+    </div>
+    <hr>
+    <div>
+        <img src="https://gi.esmplus.com/rudy16/213.PNG" alt="product logo2" width="100%">
+    </div>
+    <hr>
+    <footer id="footer">
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><a href="#">About eBay</a></li>
+                                <li><a href="#">announcement</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Security Center</a></li>
+                                <li><a href="#">Seller Center</a></li>
+                                <li><a href="#">Policies</a></li>
+                                <li><a href="#">Affiliates</a></li>
+                                <li><a href="#">Help & Contact</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Company info</a></li>
+                                <li><a href="#">Careers
+                                    </a></li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </footer>
 
 
 
